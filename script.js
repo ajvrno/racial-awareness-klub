@@ -2,7 +2,7 @@
 var acc = $(".accordion");
 var i;
 
-// MAKES RESOURCES ACCORDIAN WORK
+// MAKES RESOURCES ACCORDIAN WORK, source: https://www.w3schools.com/howto/howto_js_accordion.asp
 for (i=0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     // Toggle between adding and removing the "active" class,
@@ -19,7 +19,7 @@ for (i=0; i < acc.length; i++) {
   });
 }
 
-// TURNING NAVBAR INTO HAMBURGER MENU
+// TURNING NAVBAR INTO HAMBURGER MENU, source: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 document.querySelector("#myTopnav [data-action=toggleMenu]").addEventListener("click", hamBurger);
 
 function hamBurger() {  
