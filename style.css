@@ -1,0 +1,487 @@
+/* SITE WIDE STUFF */
+body {
+  background-image: url("bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+}
+
+.main {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  background-color: #A68A64;
+  padding: 100px;
+  margin: 25px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px -10px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 2000px;
+    background-repeat: repeat;
+    position: static;
+  }
+  .main {
+    padding: 20px;
+    contain: content;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.source-links {
+  text-decoration-line: none;
+  color: black;
+}
+
+.source-links:hover {
+  color: #b5b5b5;;
+}
+
+em {
+  font-style: normal;
+  font-weight: 600;
+}
+/* SITE WIDE STUFF */
+
+/* Top page CSS */
+.title-container {
+  text-align: left;
+  color: #EDE0D4;
+  padding-left: 50px;
+}
+
+h1.title-acro {
+	font-size: 85px;
+  margin-bottom: 0px;
+  font-family: 'Playfair Display', serif;
+}
+
+h2.main-title {
+  margin-top: 0px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-shadow: 3px 3px 2px #000000;
+}
+
+.top-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .title-container {
+    padding-left: 30px;
+    padding-right: 25px;
+  }
+  h1.title-acro {
+	  font-size: 40px;
+  }
+  h2.main-title {
+    font-size: 24px;
+  }
+}
+/* Top page CSS */
+
+/* Navigation bar CSS */
+.navbar {
+  overflow: hidden;
+  background-color: #7F5539;
+  font-family: 'Playfair Display', serif;
+  top: 0;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #dad7cd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .awareness-button {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #dad7cd;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.awareness-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #A68A64;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.awareness-dropdown a {
+  float: none;
+  color: #dad7cd;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar a:hover, .dropdown:hover .awareness-button {
+  background-color:  #A68A64;
+  color: #dad7cd;
+}
+
+.awareness-dropdown a:hover {
+  background-color: #dad7cd;
+  color: #7F5539;
+}
+
+.dropdown:hover .awareness-dropdown {
+  display: block;
+}
+
+/* turns nav bar into hamburger menu while on mobile device */
+@media screen and (max-width: 600px) {
+  .navbar a, .dropdown .awareness-button {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    contain: content;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .awareness-dropdown {position: relative;}
+  .navbar.responsive .dropdown .awareness-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    contain: content;
+  }
+}
+/* Navigation bar CSS */
+
+/* Homepage CSS */
+.raceq {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px 50px;
+}
+
+.raceq-head {
+  font-size: 32px;
+}
+
+.raceq-par {
+  font-size: 20px;
+}
+
+.tan-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dad7cd;
+  padding: 25px;
+  margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.main-fast-facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  background-color: white;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px -10px;
+  border-radius: 25px;
+  margin: auto 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .raceq {
+    padding: 5px 15px;
+  }
+  .raceq-head {
+    font-size: 24px;
+  }
+  .raceq-par {
+    font-size: 14px;
+  }
+  .tan-box {
+    margin: 10px;
+  }
+  .main-fast-facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    contain: content;
+  }
+}
+
+.ff-tan-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dad7cd;
+	position: relative;
+  width: 25%;
+  contain: content;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .ff-tan-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25%;
+    contain: content;
+  }
+}
+
+.ff-tan-box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.ff-text {
+  font-size: 14px;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .ff-text {
+    font-size: 12px;
+  }
+}
+
+.ff-text h3 {
+  font-size: 26px;
+}
+
+/* @media screen and (max-width: 600px) {
+  .ff-text {
+    font-size: 12px;
+  }
+  .ff-text h3 {
+    font-size: 24px;
+  }
+}*/
+
+.ff-text .learn-more {
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.ff-text .learn-more:hover {
+background-color: #b5b5b5;
+}
+/* Homepage CSS */
+
+/* Awareness CSS */
+.education-main {
+  color: #dad7cd;
+}
+
+.education-main .tan-box {
+  color: black;
+}
+
+.healthcare-main {
+  color: #dad7cd;
+}
+
+.healthcare-main .tan-box {
+  color: black;
+}
+
+.immigration-main {
+  color: #dad7cd;
+}
+
+.immigration-main .tan-box {
+  color: black;
+}
+
+.facts-ul {
+  text-align: left;
+}
+/* Awareness CSS */
+
+/*About page CSS */
+.about-section {
+	text-align: center;
+  color: #dad7cd;
+}
+
+.about-section h2 {
+  font-size: 32px;
+}
+
+.about-section .tan-box {
+  color: black;
+  padding: 15px 50px;
+  font-size: 18px;
+}
+
+.about-pic {
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  border-radius: 50%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.team {
+	text-align: center;
+  width: 300px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.contact-button {
+  border: none;
+  font-family: 'Playfair Display', serif;
+  outline: 0;
+  display: inline-block;
+  padding: 4px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+/*About page CSS */
+
+/* Resources page CSS */
+.accordion {
+  font-family: 'Playfair Display', serif;
+  background-color: #7F5539;
+  color: #dad7cd;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #dad7cd;
+  color: #7F5539;
+}
+
+.panel {
+  font-family: 'Playfair Display', serif;
+  padding: 0 18px;
+  background-color: #7F5539;
+  display: none;
+  overflow: hidden;
+}
+
+.resources-ul {
+  text-align: left;
+  color: #dad7cd;
+  margin: 15px 35px;
+}
+
+.resources-ul a {
+  color: #A68A64;
+}
+
+.resources-ul a:visited {
+  text-decoration: none;
+  color: #A68A64;
+}
+
+@media screen and (max-width: 600px) {
+  .resources-ul {
+    font-size: 14px;
+    margin: 5px 10px;
+  }
+  .accordion {
+  font-size: 15px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
+  }
+}
+/* Resources page CSS */
+
