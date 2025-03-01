@@ -1,4 +1,4 @@
-https://racial-awareness-klub.ajvrno.repl.co/
+[https://racial-awareness-klub.ajvrno.repl.co/](https://replit.com/@ajvrno/racial-awareness-klub?v=1)
 
 **Kode with Klossy Summer 2022 Final Project**
 
